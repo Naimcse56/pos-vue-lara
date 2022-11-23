@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="body">
         <h4>Welcome Home</h4>
     </div>
 </template>
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.body {
+    margin: 15px;
+}
 </style>

@@ -1,16 +1,25 @@
 <template>
-    <div>
-        <ul class="menu">
-            <li>
-                <router-link to="/">Home</router-link>
-            </li>
-            <li>
-                <router-link to="/register">Register</router-link>
-            </li>
-            <li>
-                <router-link to="/login">Login</router-link>
-            </li>
-        </ul>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item">
+                            <router-link to="/">Home</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/register">Register</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/login">Login</router-link>
+                        </li>
+                        <li class="nav-item">
+                            <router-link to="/dashboard">Dashboard</router-link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </div>
     <router-view></router-view>
 </template>
@@ -18,7 +27,6 @@
 <script>
 export default {
     setup () {
-        
 
         return {}
     }
@@ -26,14 +34,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.menu {
-    display: flex;
-    justify-content: space-between;
-    font-size: 20px;
-    border: 1px solid;
-    background-color: aliceblue;
-    padding: 10px;
-    font-weight: 600;
-    cursor: pointer;
+li.nav-item {
+    margin: 5px;
+}
+.header {
+    margin: 15px;
+}
+a {
+    color: coral;
+    font-size: 22px;
+    font-weight: 700;
 }
 </style>
